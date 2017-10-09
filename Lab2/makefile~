@@ -1,6 +1,3 @@
-#James Kiernan
-#C00125728
-
 EXE=Signal.exe
 CC=g++
 CFLAGS= -std=c++11 -pthread
