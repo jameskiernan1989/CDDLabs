@@ -1,0 +1,8 @@
+EXE=Signal.exe
+CC=g++
+CFLAGS= -std=C++11 -pthread
+
+ALL: Signal.cpp Semaphore.cpp Semaphore.h
+	$(CC) $(CFLAGS) Semaphore.cpp Signal.cpp -o $(EXE)
+CLEAN:
+	rm *.o
