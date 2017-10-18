@@ -1,10 +1,10 @@
 #James Kiernan
 #C00125728
 
-EXE=Signal.exe
+EXE=Rendevous
 CC=g++
 CFLAGS= -std=c++11 -pthread
-CFILES=Signal.cpp Semaphore.cpp
+CFILES=Rendevous.cpp Semaphore.cpp
 HFILES=Semaphore.h
 
 ALL: $(CFILES) $(HFILES)

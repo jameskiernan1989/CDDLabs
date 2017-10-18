@@ -1,9 +1,9 @@
-/*! \file signal.cpp
-    \brief Demos the basic use of a Semaphore to control threads
-
+/*! \file Mutex.cpp
+    \author James Kiernan
+    \date 17/10/2017
+    \brief file to demo mutex locks using semaphores
 !
 */
-
 #include "Semaphore.h"
 #include <iostream>
 #include <thread>
