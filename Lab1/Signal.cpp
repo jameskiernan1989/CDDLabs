@@ -1,7 +1,7 @@
-/*! \file Mutex.cpp
+/*! \file Signal.cpp
     \author James Kiernan
     \date 17/10/2017
-    \brief file to demo mutex locks using semaphores
+    \brief file to demo sgnals and waits using semaphores
 !
 */
 #include "Semaphore.h"

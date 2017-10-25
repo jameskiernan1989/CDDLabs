@@ -1,3 +1,10 @@
+/*! \author James Kiernan
+    \date 17/10/2017
+    \file Semaphore.h
+    \brief The Semaphore class
+
+!
+*/
 #include <mutex>
 #include <condition_variable>
 #include <chrono>

@@ -1,6 +1,4 @@
-/*! \author James Kiernan
-    \date 17/10/2017
-    \file Mutex.cpp
+/*! \file signal.cpp
     \brief Demos mutual exclusion using a Semaphore to control threads
 
 !

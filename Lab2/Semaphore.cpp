@@ -1,3 +1,10 @@
+/*! \author James Kiernan
+    \date 17/10/2017
+    \file Semaphore.cpp
+    \brief The Semaphore class
+
+!
+*/
 #include "Semaphore.h"
 /*! \class Semaphore
     \brief A Semaphore Implementation

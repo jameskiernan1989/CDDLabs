@@ -1,4 +1,4 @@
-/*! \file Mutex.cpp
+/*! \file Rendezvous.cpp
     \author James Kiernan
     \date 17/10/2017
     \brief file to demo Rendezvous using semaphores
