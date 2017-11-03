@@ -1,8 +1,4 @@
 # CDDLabs
-4th year lab exercises for Concurrent and Distributed Development module.
-
- CDDLabs (2017-18)
-
 4th Year lab exercises for Concurrent and Distributed Application Development module for the Bsc Software Development course, IT Carlow.
 
 ## Contents
