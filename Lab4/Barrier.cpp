@@ -2,6 +2,7 @@
     \date 25/10/2017
     \file Barrier.cpp
     \brief The Barrier class
+    \licence GNU General Public Licence
 
 !
 */

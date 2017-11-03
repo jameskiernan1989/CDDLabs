@@ -2,7 +2,7 @@
     \date 25/10/2017
     \file Semaphore.cpp
     \brief The Semaphore class
-
+    \GNU General Public Licence
 !
 */
 #include "Semaphore.h"

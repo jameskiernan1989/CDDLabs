@@ -2,6 +2,7 @@
     \date 25/10/2017
     \file Barrier.h
     \brief The Barrier class
+	\GNU General Public Licence
 
 !
 */

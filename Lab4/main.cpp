@@ -2,7 +2,7 @@
     \date 25/10/2017
     \file Barrier.cpp
     \brief Class to demonstrate the barrier solution with Semaphores
-
+    \licence GNU General Public Licence
 !
 */
 
