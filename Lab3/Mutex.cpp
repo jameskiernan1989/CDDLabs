@@ -2,7 +2,7 @@
     \date 17/10/2017
     \file Mutex.cpp
     \brief Demos mutual exclusion using a Semaphore to control threads
-
+    \licence GNU General Public Licence
 !
 */
 
