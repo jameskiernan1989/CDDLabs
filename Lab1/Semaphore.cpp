@@ -2,6 +2,7 @@
     \date 17/10/2017
     \file Semaphore.cpp
     \brief The Semaphore class
+    \licence GNU General Public Licence
 
 !
 */

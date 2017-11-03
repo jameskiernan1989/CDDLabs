@@ -2,6 +2,7 @@
     \author James Kiernan
     \date 17/10/2017
     \brief file to demo sgnals and waits using semaphores
+    \licence GNU General Public Licence
 !
 */
 #include "Semaphore.h"
