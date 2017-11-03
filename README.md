@@ -40,7 +40,7 @@ GNU General Public Licence
 
 ## Acknowledgments
 
-* Joseph Kehoe, Class Lecturer
+* Joseph Kehoe - *Class Lecturer* - [josephkehoe](https://github.com/josephkehoe)
 * IT Carlow
 
 
