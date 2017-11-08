@@ -42,7 +42,25 @@ class barrier{
 \brief Barrier class destructor.
  */
   ~Barrier();
+
+  /*!
+\func void setThreadCount
+\param int threadCount
+\brief Sets the amount of threads that will be using the barrier
+ */
   void setThreadCount(int threadCount);
+
+  /*!
+\func getThreadCount
+\param none
+\brief Returns the amount of threads that are using the barrier
+ */
   int getThreadCount();
-  void waitForThreads();
+
+  /*!
+\func waitForAll
+\param none
+\brief 
+ */
+  void wait();
 };

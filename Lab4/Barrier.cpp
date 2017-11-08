@@ -57,6 +57,11 @@ int Barrier::getThreadCount(){
 \param none
 \brief 
  */
-void Barrier::waitForAll(){
-
+void Barrier::wait(){
+  if(gate == 0){
+    gateA();
+  }
+  else{
+    gateB();
+  }
 }
