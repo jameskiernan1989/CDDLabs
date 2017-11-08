@@ -1,62 +1,61 @@
 /*!\author James Kiernan
     \date 8/11/2017
-    \file Barrier.cpp
+    \file Barrier.h
     \brief The Barrier class
-    \licence GNU General Public Licence
+	\GNU General Public Licence
 
 !
 */
-#include "Barrier.h"
+#include "Semaphore.h"
+#include <iosteam>
+#include <stdio.h>
 /*! \class Barrier
     \brief Class Barrier is used to cause threads to wait until they each perform a certain function or each reach a particular point in their execution.
 */
 
-/*!
-\func Barrier
+class barrier{
+  
+ private:
+  int threadCount; // Number of threads using the barrier
+  int threadNum; // current thread
+  int gate; // current gate active
+  std::shared_ptr<Semaphore> mutex; //mutex to control thread execution
+  std::shared_ptr<Semaphore> barrierA; // first gate 
+  std::shared_ptr<Semaphore> barrierB; // second gate
+
+  void gateA(); // first gate of the barrier
+  void gateB(); // second gate of the barrier
+  
+ public:
+  
+  /*!
+\func Barrier()
 \param int threadCount
 \brief Barrier class constructor. This lets the Barrier know how many threads will be passing through it, and initializes the current thread number, which gate is being currently used, semaphore instances of a Mutual Exclusion lock and two barriers to control thread flow.
 
  */
-Barrier::Barrier(int threadCount){
-  this->threadCount = threadCount;
-  threadNum = 0;
-  gate = 0;
-  mutex = std::make_shared<Semaphore>(1);
-  barrierA = std::make_shared<Semaphore>(0);
-  barrierB = std::make_shared<Semaphore>(1);
-}
-/*!
+  Barrier(int threadCount);
+  
+  /*!
 \func ~Barrier
 \param none
 \brief Barrier class destructor.
  */
-Barrier::~Barrier(){
-  // Destructor
-}
+  ~Barrier();
 
-/*!
+  /*!
 \func void setThreadCount
 \param int threadCount
 \brief Sets the amount of threads that will be using the barrier
  */
-void Barrier::setThreadCount(int threadCount){
-  this->threadCount = threadCount;
-}
+  void setThreadCount(int threadCount);
 
-/*!
+  /*!
 \func getThreadCount
 \param none
 \brief Returns the amount of threads that are using the barrier
  */
-int Barrier::getThreadCount(){
-  return this->threadCount;
-}
-
-/*!
-\func waitForAll
-\param none
-\brief 
- */
-void Barrier::waitForAll(){
-
-}
+  int getThreadCount();
+  
+  void waitForThreads();
+};
